@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.we {
+  font-size: 50px;
+  color: #ffff;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+section .img {
+  background-image: url("image/flower1.jpeg");
+  opacity: 0.8;
+  box-shadow: 2px 2px 5px 1px #ffbab9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+section .img .text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: #fff;
+  font-size: 40px;
+}
+section .img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(); */
+}
+section .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .contant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+section .contant .form {
+  width: 50%;
+}
+section .contant .form h2 {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5cm;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #fabab9;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-align: center;
+}
+section .contant .form .input {
+  margin-bottom: 20px;
+}
+section .contant .form .input span {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #000;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+section .contant .form .input input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #21472f;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+}
+section .contant .form .input input[type="submit"] {
+  background: #fabab9;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+section .contant .form .input input[type="submit"]:hover {
+  background: #fa969d;
+}
+section .contant .form .remeeber {
+  margin-bottom: 10px;
+  color: #607d8b;
+  font-weight: 400;
+  font-size: 14px;
+}
+section .contant .form .input p {
+  color: #000;
+}
+section .contant .form .input p a {
+  color: #fa969d;
+}
+section .contant .form h3 {
+  color: #607d8b;
+  text-align: center;
+  margin: 80px 0 10px;
+  font-weight: 500;
+}
+section .contant .form .csi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .contant .form .csi li {
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 7px;
+  cursor: pointer;
+}
+section .contant .form .csi li:hover {
+  transform: scale(1.25);
+}
+section .contant .form .csi li img {
+}
+
+@media (max-width: 570px) {
+  section .img {
+    position: absolute;
+    top: o;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section .contant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  section .contant .form {
+    width: 100%;
+    padding: 40px;
+    background: rgb(255 255 255 / 90%);
+    margin: 50px;
+  }
+  section .contant .form h3 {
+    color: #607d8b;
+    text-align: center;
+    margin: 30px 0 10px;
+    font-weight: 500;
+  }
+}
